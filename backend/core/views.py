@@ -1,5 +1,6 @@
 from .serializers import HistorySerializer
 from .models import Histroy
+from rest_framework import mixins, status, viewsets
 
 class HistoryViewSet(viewsets.ModelViewSet):
     queryset = Histroy.objects.all()
