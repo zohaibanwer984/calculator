@@ -136,3 +136,93 @@ async function del(id) {
 
 onMounted(load)
 </script>
+<style scoped>
+div {
+  max-width: 700px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  padding: 8px 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #42b983;
+}
+
+input[readonly] {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+button {
+  padding: 8px 14px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #42b983;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #369870;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+p {
+  margin-top: 10px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #42b983;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #eefaf5;
+}
+
+td button {
+  background-color: #ff4d4f;
+}
+
+td button:hover {
+  background-color: #d9363e;
+}
+</style>
